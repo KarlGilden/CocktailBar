@@ -26,6 +26,9 @@ const Navbar = () => {
             <div className='mr-6'>
                 <a className='text-black text-1xl 2xl:text-3xl' href="">Cocktails</a>
             </div>
+            <div className='mr-6'>
+                <a className='text-black text-1xl 2xl:text-3xl' href="">Beer</a>
+            </div>
         </div>
 
         {/* Mobile Menu */}
@@ -38,6 +41,9 @@ const Navbar = () => {
             </div>
             <div className='p-6 flex justify-center'>
                 <a className='text-black text-1xl 2xl:text-3xl' href="">Cocktails</a>
+            </div>
+            <div className='p-6 flex justify-center'>
+                <a className='text-black text-1xl 2xl:text-3xl' href="">Beer</a>
             </div>
         </div>
 
