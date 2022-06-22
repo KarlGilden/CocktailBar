@@ -5,7 +5,7 @@ import {GrFormClose} from 'react-icons/gr'
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false)
   return (
-    <nav className='w-screen bg-white flex items-center justify-between px-5 py-5 sm:px-10 sm:justify-start'>
+    <nav className='w-[100%] bg-white flex items-center justify-between px-5 py-5 sm:px-10 sm:justify-start'>
 
         {/* Logo */}
         <div className='flex items-center mr-6'>
