@@ -1,4 +1,5 @@
 import React from 'react'
+import MenuButton from '../MenuButton/MenuButton'
 
 interface IProps{
     drink: any
@@ -6,15 +7,13 @@ interface IProps{
 
 const DrinkPreview = ({drink}:IProps) => {
   return (
-    <div className='sm:flex sm:justify-between sm:w-[500px]'>
-        <div>
-            <h1 className='text-4xl my-2'>{drink.strDrink}</h1>
-            <p className='my-1 italic'>{drink.strIngredient1}</p>
-            <p className='my-1 italic'>{drink.strIngredient2}</p>
-            <p className='my-1 italic'>{drink.strIngredient3}</p>
-        </div>
+    <div className='flex flex-col items-center text-center sm:flex-row sm:justify-between sm:w-full sm:max-w-[800px]  mb-[100px] sm:even:flex-row-reverse sm:odd:flex-row'>
+            <img className='w-[200px]' src={drink.strDrinkThumb} alt="Unavailable" />
+            <div className='w-full'>
+              <h1 className='text-4xl my-5'>{drink.strDrink}</h1>
+              <MenuButton text="See Recipe"/>
+            </div>
 
-        <img className='w-[200px] my-3' src={drink.strDrinkThumb} alt="Unavailable" />
     </div>
   )
 }
