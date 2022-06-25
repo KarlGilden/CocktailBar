@@ -6,7 +6,7 @@ interface IProps{
 
 const MenuButton = ({text}:IProps) => {
   return (
-    <button className='p-6 border-2 border-black w-[200px] my-5'>{text}</button>
+    <button className='p-5 font-button border-2 border-zinc-800 text-2xl hover:text-white hover:bg-zinc-800 w-[200px] my-5'>{text}</button>
   )
 }
 
