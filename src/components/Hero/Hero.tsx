@@ -3,9 +3,9 @@ import HeroButton from '../Buttons/HeroButton/HeroButton'
 import Logo from '../../images/Cocktail-logo.svg'
 const Hero = () => {
   return (
-    <div className='h-[500px] sm:h-[400px] px-10 py-5 sm:px-20 font-poppins flex flex-col justify-between items-center sm:items-start relative overflow-hidden'>
+    <div className='h-[550px] sm:h-[400px] px-10 py-5 sm:px-20 font-poppins flex flex-col justify-between items-center sm:items-start relative overflow-hidden'>
         <h1 className='text-[#278281] text-5xl sm:text-6xl font-bold lg:w-[65%]'>The best cocktail recipes to liven up <span className='text-[#F4607F]'>your next event</span></h1>
-          <div className='flex'>
+          <div className='sm:flex'>
             <HeroButton secondary={false} text="See whats on offer"/>
             <HeroButton secondary={true} text="Random drink"/>
           </div>
