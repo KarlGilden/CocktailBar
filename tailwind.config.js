@@ -11,6 +11,12 @@ module.exports = {
         'logo': ['Fascinate'] 
       }
     },
+    colors: {
+      primary: '#71C6C4',
+      secondary: '#f4607f',
+      black: '#000',
+      white: '#fff'
+    }
   },
   plugins: [],
 }
