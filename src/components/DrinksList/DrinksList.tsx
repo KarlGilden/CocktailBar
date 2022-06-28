@@ -16,7 +16,7 @@ const DrinksList = () => {
     }
     
   return (
-    <div className='flex-col'>
+    <div className='grid justify-items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3'>
     {drinks?.map((value:any)=>{
         return (
             <DrinkPreview key={value.idDrink} drink={value}/>

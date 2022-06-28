@@ -7,13 +7,12 @@ interface IProps{
 
 const DrinkPreview = ({drink}:IProps) => {
   return (
-    <div className='flex flex-col items-center text-center sm:odd:text-right sm:even:text-left sm:flex-row sm:justify-between sm:w-full sm:max-w-[700px] 2xl:max-w-[800px] mb-[100px] sm:even:flex-row-reverse sm:odd:flex-row'>
-            <img className='w-[200px]' src={drink.strDrinkThumb} alt="Unavailable" />
-            <div className='w-full'>
-              <h1 className='text-4xl md:text-5xl my-5'>{drink.strDrink}</h1>
-              <MenuButton text="See Recipe"/>
+    <div className='w-[300px] h-[300px] relative group'>
+            <div className='bg-black absolute w-full h-full'></div>
+            <img className='w-full absolute top-0 left-0 group-hover:opacity-30' src={drink.strDrinkThumb} alt="Unavailable" />
+            <div className='w-full h-full grid grid-cols-1 justify-items-center content-center absolute'>
+              <button onClick={()=>alert("hello")} className='hidden group-hover:block hover:bg-black transition w-[50%] h-[50px] text-white border-[2px] border-white'>See Recipe</button>
             </div>
-
     </div>
   )
 }
