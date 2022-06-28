@@ -1,5 +1,5 @@
 import React from 'react'
-import MenuButton from '../MenuButton/MenuButton'
+import MenuButton from '../Buttons/MenuButton/MenuButton'
 
 interface IProps{
     drinkName:string
