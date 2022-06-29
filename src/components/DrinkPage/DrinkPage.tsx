@@ -19,9 +19,9 @@ const DrinkPage = () => {
     }
 
   return (
-    <div className='w-full px-[5%] py-5 sm:flex'>
+    <div className='w-full min-h-[70vh] px-[5%] py-5 sm:flex'>
 
-        <img className='w-[100%] sm:w-[50%] md:w-[25%] sm:mr-5' src={drink?.strDrinkThumb} alt="" />
+        <img className='w-[100%] sm:w-[300px] sm:h-[300px] md:w-[300px] sm:mr-5' src={drink?.strDrinkThumb} alt="" />
 
         <div>
             <h1 className='text-3xl'>{drink?.strDrink}</h1>
