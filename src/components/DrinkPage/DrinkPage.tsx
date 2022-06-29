@@ -9,13 +9,18 @@ const DrinkPage = () => {
     const [drink, setDrink] = useState<any>("")
     useEffect(()=>{
         getData()
-    })
+    }, [])
 
     const getData = async () => {
-        const data =  await getDrinks('https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i='+id)
-        console.log(data)
-        setDrink(data.drinks[0])
-    
+        if(id == 'random'){
+            const data =  await getDrinks('https://www.thecocktaildb.com/api/json/v1/1/random.php')
+            console.log(data)
+            setDrink(data.drinks[0])
+        }else{
+            const data =  await getDrinks('https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i='+id)
+            console.log(data)
+            setDrink(data.drinks[0])
+        }
     }
 
   return (
