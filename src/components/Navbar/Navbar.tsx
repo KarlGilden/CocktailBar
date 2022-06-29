@@ -21,13 +21,10 @@ const Navbar = () => {
         {/* Links */}
         <div className='hidden sm:flex'>
             <div className='mr-6'>
-                <a className='text-black text-1xl 2xl:text-3xl' href="">Home</a>
+                <a className='text-black text-1xl 2xl:text-3xl' href="/">Home</a>
             </div>
             <div className='mr-6'>
-                <a className='text-black text-1xl 2xl:text-3xl' href="">Cocktails</a>
-            </div>
-            <div className='mr-6'>
-                <a className='text-black text-1xl 2xl:text-3xl' href="">Beer</a>
+                <a className='text-black text-1xl 2xl:text-3xl' href='/#categories'>Categories</a>
             </div>
         </div>
 
@@ -37,13 +34,10 @@ const Navbar = () => {
                 <GrFormClose onClick={()=>{setMenuOpen(!menuOpen)}} className='text-5xl'/>
             </div>
             <div className='p-6 flex justify-center'>
-                <a className='text-black text-1xl 2xl:text-3xl' href="">Home</a>
+                <a className='text-black text-1xl 2xl:text-3xl' href="/">Home</a>
             </div>
             <div className='p-6 flex justify-center'>
-                <a className='text-black text-1xl 2xl:text-3xl' href="">Cocktails</a>
-            </div>
-            <div className='p-6 flex justify-center'>
-                <a className='text-black text-1xl 2xl:text-3xl' href="">Beer</a>
+                <a className='text-black text-1xl 2xl:text-3xl' href="">Categories</a>
             </div>
         </div>
 
